@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:layoutDirection="rtl"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/horizontalprogressbar"
+        android:secondaryProgress="100" />
+
+    <TextView
+        android:id="@+id/savollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="20/20"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/savollar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center" />
+
+    <EditText
+        android:id="@+id/t4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:hint="@string/rasm_nomni_yozing"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/tv_togri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_next"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="7"
+        android:textColor="#07F800"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_xato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_next"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="7"
+        android:textColor="#FA0000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</RelativeLayout>
